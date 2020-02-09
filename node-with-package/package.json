@@ -1,0 +1,13 @@
+{
+  "name": "bola_jabe_na",
+  "version": "1.0.0",
+  "description": "Node.js on Docker with Package",
+  "author": "Saif Kamal Chowdhury <saifx2y@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "camelcase": "^5"
+  }
+}

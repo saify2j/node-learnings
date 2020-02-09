@@ -1,0 +1,14 @@
+{
+  "name": "eventhub_sender",
+  "version": "1.0.0",
+  "description": "Node.js eventhub sender",
+  "author": "Saif Kamal Chowdhury <saifx2y@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "camelcase": "^5",
+    "@azure/event-hubs": "5.0.0"
+  }
+}
