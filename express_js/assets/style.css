@@ -1,0 +1,14 @@
+
+        body{
+            background:skyblue;padding: 30px;font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            font-size:48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        p{
+            font-size: 17px;
+            text-align: center;
+        }

@@ -1,0 +1,16 @@
+version: '3'
+services: 
+    food-service:
+        build: ./food-service
+        volumes:
+            - ./food-service:/usr/src/app
+        ports:
+            - 5001:80
+    website:
+        image: php:7.4.2-apache
+        volumes: 
+            - ./website:/var/www/html
+        ports:
+            - 5000:80
+        depends_on: 
+            - food-service
