@@ -6,6 +6,7 @@ var server = http.createServer(function(req,res){
                 'RICE', 
                 'CHICKEN']
     }
+    food['food'].push('BEEF');
     res.end(JSON.stringify(food));
 })
 server.listen('80', '0.0.0.0');
