@@ -6,9 +6,27 @@
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
     <link href="/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <script src=/todo-list.js></script>
     </head>
+
     <body>
+        <style>
+            .del_icon{
+                float: right;
+
+            }
+            .del_icon:hover{
+                color:red;
+            }
+            .ok_icon{
+                float:right;
+            }
+            .ok_icon:hover{
+                color:rgb(71, 255, 65);
+            }
+        </style>
         <h1>My ToDo List</h1>
         <div class="todo-table">
             <form>
@@ -18,7 +36,12 @@
         </div>
         <ul>
             <% for (var i =0 ; i < todos.length ;i ++) { %>
-                   <li><%= todos[i].item %></li>  
+                   <li><p style="display: inline;"><%= todos[i].item %></p>
+                    <a style="padding-left: 25px;" class="del_icon"><i class="material-icons">remove_circle_outline</i></a>
+                    <a class="ok_icon"><i class="material-icons">done_all</i></a>
+
+                    
+                </li>  
                 <% } %>  
         </ul>
 

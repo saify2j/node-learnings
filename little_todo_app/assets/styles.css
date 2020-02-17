@@ -5,6 +5,7 @@ body{
 }
 
 #todo-table{
+
     position: relative;
     width: 95%;
     background: #090d13;
@@ -44,13 +45,14 @@ button{
 
 ul{
     list-style-type: none;
-    padding: 0;
+    padding-top: 80px;
     margin: 0;
 }
 
 li{
+    
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     font-family: arial;
     font-size: 20px;
@@ -59,7 +61,7 @@ li{
 }
 
 li:hover{
-    text-decoration: line-through;
+    color: skyblue;
     background: rgba(0,0,0,0.2);
 }
 
