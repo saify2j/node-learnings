@@ -1,4 +1,3 @@
-var fetch = require('node-fetch')
 var getJson = require('get-json')
 let url = 'http://json_serve:8080'
 let settings = {method: "GET"}
