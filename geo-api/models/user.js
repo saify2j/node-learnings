@@ -2,6 +2,18 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 
+const geoSchema = Schema({
+    type :{
+        type: String,
+        default: "Point"
+    },
+    coordinates: {
+        type: [Number],
+        index: "2dsphere"
+    }
+
+})
+
 const userSchema = Schema({
     name:{
         type: String,
@@ -16,7 +28,8 @@ const userSchema = Schema({
     },
     available:{
         type: Boolean
-    }
+    },
+    geometry:geoSchema
 
 })
 
